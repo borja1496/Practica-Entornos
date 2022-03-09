@@ -13,6 +13,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JMenuBar;
 import javax.swing.JOptionPane;
 import javax.swing.JMenu;
+import javax.swing.ImageIcon;
 
 public class Calculadora extends JFrame {
 
@@ -20,6 +21,7 @@ public class Calculadora extends JFrame {
 	private JTextField valor1;
 	private JTextField valor2;
 	private JTextField resultado;
+	private final JLabel lblNewLabel = new JLabel("");
 
 	/**
 	 * Launch the application.
@@ -158,5 +160,8 @@ public class Calculadora extends JFrame {
 		
 		JMenu mnOpcion = new JMenu("Opcion 2");
 		menuBar.add(mnOpcion);
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Borja\\git\\Practica-Entornos\\FondoCalc (2).jpg"));
+		lblNewLabel.setBounds(0, 0, 444, 271);
+		contentPane.add(lblNewLabel);
 	}
 }
