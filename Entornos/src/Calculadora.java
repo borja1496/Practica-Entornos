@@ -1,4 +1,3 @@
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -48,6 +47,9 @@ public class Calculadora extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		setLocationRelativeTo(null); //Muestra la ventana en el centro al ejecutarla
+		setResizable(false); //Impide que se pueda maximizar la ventana
 		
 		JLabel lblquOperacinDesea = new JLabel("\u00BFQu\u00E9 operaci\u00F3n desea realizar?");
 		lblquOperacinDesea.setBounds(231, 37, 193, 14);
