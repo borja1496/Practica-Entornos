@@ -160,7 +160,7 @@ public class Calculadora extends JFrame {
 		
 		JMenu mnOpcion = new JMenu("Opcion 2");
 		menuBar.add(mnOpcion);
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Borja\\git\\Practica-Entornos\\FondoCalc (2).jpg"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Borja\\git\\Practica-Entornos\\Entornos\\FondoCalc (2).jpg"));
 		lblNewLabel.setBounds(0, 0, 444, 271);
 		contentPane.add(lblNewLabel);
 	}
