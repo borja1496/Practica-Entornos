@@ -11,6 +11,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JMenuBar;
+import javax.swing.JOptionPane;
 import javax.swing.JMenu;
 
 public class Calculadora extends JFrame {
@@ -141,15 +142,15 @@ public class Calculadora extends JFrame {
 		JButton btnSalir = new JButton("Salir");
 		btnSalir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				System.exit(0);
-				
+				JOptionPane.showMessageDialog(null, "Presione aceptar para salir", "Saliendo", 2); //Muestra ventana de confirmación de salida				
+				System.exit(0); //Cierra el programa												//Componente padre, mensaje, título, icono				
 			}
 		});
 		btnSalir.setBounds(167, 227, 89, 23);
 		contentPane.add(btnSalir);
 		
 		JMenuBar menuBar = new JMenuBar();
-		menuBar.setBounds(0, 0, 434, 21);
+		menuBar.setBounds(0, 0, 444, 21);
 		contentPane.add(menuBar);
 		
 		JMenu mnNewMenu = new JMenu("Opcion 1");
