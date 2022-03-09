@@ -11,6 +11,8 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
 
 public class Calculadora extends JFrame {
 
@@ -142,5 +144,15 @@ public class Calculadora extends JFrame {
 		});
 		btnSalir.setBounds(167, 227, 89, 23);
 		contentPane.add(btnSalir);
+		
+		JMenuBar menuBar = new JMenuBar();
+		menuBar.setBounds(0, 0, 434, 21);
+		contentPane.add(menuBar);
+		
+		JMenu mnNewMenu = new JMenu("Opcion 1");
+		menuBar.add(mnNewMenu);
+		
+		JMenu mnOpcion = new JMenu("Opcion 2");
+		menuBar.add(mnOpcion);
 	}
 }
